@@ -15,18 +15,17 @@ public class Die
      */
     public Die()
     {
-        die = 0;
+        Die1 = 0;
+        Die2 = 0;
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * Rolls the die
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void roll()
     {
-        // put your code here
-        return x + y;
+        Die1 = (int) Math.random() * 6 +1;
+        Die1 = (int) Math.random() * 7 +1;
     }
 }
