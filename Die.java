@@ -21,11 +21,14 @@ public class Die
 
     /**
      * Rolls the die
-     *
+     * @ return the total of your roll
      */
-    public void roll()
+    public int roll()
     {
-        Die1 = (int) Math.random() * 6 +1;
-        Die1 = (int) Math.random() * 7 +1;
+        Die1 = (int) (Math.random() * 6 + 1);
+        Die2 = (int) (Math.random() * 6 + 1);
+        System.out.println("You rolled a "+ Die1 + " and a " + Die2 + " for a " + (Die1+Die2));
+        return Die1+Die2; //returns total only, only number actually necessary, but DIE1 and DIE2 available for graphics later on
     }
+    
 }
